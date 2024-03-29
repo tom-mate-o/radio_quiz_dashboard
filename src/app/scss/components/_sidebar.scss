@@ -1,0 +1,86 @@
+@use '../util/' as u;
+
+.sidebar {
+  background-color: var(--question-bg);
+  position: fixed;
+  width: 100px;
+  min-width: 100px;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: u.rem(10);
+  gap: u.rem(30);
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h4 {
+    color: var(--light-text);
+    margin: 0;
+  }
+
+  .scoreContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: u.rem(10);
+    margin-bottom: u.rem(10);
+    background-color: var(--questionbox-bg);
+    border-radius: u.rem(15);
+    padding: u.rem(10);
+    gap: u.rem(10);
+
+    @include u.breakpoint-down('small') {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+
+      h1 {
+        height: 50px;
+      }
+    }
+  }
+
+  .roundNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: u.rem(10);
+
+    gap: u.rem(10);
+    background-color: var(--questionbox-bg);
+    border-radius: u.rem(15);
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: larger;
+      background-color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      box-shadow: 0px 5px 0px 0px var(--question-bg);
+    }
+
+    @include u.breakpoint-down('small') {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  @include u.breakpoint-down('small') {
+    width: 100vw;
+    height: 100px;
+    flex-direction: row;
+  }
+}

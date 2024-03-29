@@ -1,0 +1,55 @@
+@use '../util/' as u;
+
+.quizbox {
+  border-radius: u.rem(15);
+  background-color: var(--quizbox-bg);
+  padding: u.rem(20);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: var(--light-text);
+
+  h3 {
+    width: 100%;
+    margin-bottom: u.rem(10);
+    color: var(--dark-text);
+  }
+
+  .moderation {
+    margin-bottom: u.rem(15);
+  }
+
+  .answerbutton {
+    color: var(--dark-text);
+    background-color: var(--answerbutton);
+    padding: u.rem(15);
+    padding-inline: u.rem(30);
+    border-radius: u.rem(15);
+    box-shadow: 0px 5px 0px 0px var(--question-bg);
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--answerbutton-hover);
+    }
+
+    &.correct {
+      background-color: var(--answerbutton-green);
+      margin: 0;
+
+      &:hover {
+        background-color: var(--answerbutton-green-hover);
+      }
+    }
+
+    &.incorrect {
+      background-color: var(--answerbutton-red);
+      margin: 0;
+      &:hover {
+        background-color: var(--answerbutton-red-hover);
+      }
+    }
+  }
+}

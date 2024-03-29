@@ -1,35 +1,29 @@
 :root {
-  --main-bg: hsl(47, 61%, 85%);
-
-  --dark-color-opacity: rgba(0, 0, 0, 0.65);
-  --text-color-light: hsl(47, 61%, 85%);
-  --text-color-dark: hsl(49, 11%, 29%);
-  --mobilemenu-bg: hsl(49, 11%, 29%);
-  --dark-bg: hsl(49, 11%, 29%);
-  --light-bg: hsl(0, 0%, 100%);
-  --content-text-color-light: hsl(0, 0%, 100%);
-  --content-text-color-dark: hsl(49, 11%, 29%);
-  --content-image-headline-color: hsl(0, 0%, 100%);
-
-  --primary-button-bg: hsl(49, 11%, 29%);
-  --primary-button-bg-hover: hsl(49, 11%, 19%);
-  --secondary-button-bg: transparent;
-  --secondary-button-bg-hover: hsl(47, 61%, 85%);
-  --secondary-button-border: hsl(0, 0%, 100%);
-  --secondary-button-border-hover: hsl(47, 61%, 85%);
-  --secondary-button-text-color: hsl(0, 0%, 100%);
-  --secondary-button-text-color-hover: hsl(49, 11%, 29%);
-
-  --dark-color-mobile-gallery-opacity: rgba(0, 0, 0, 0.4);
-
-  --all-color: hsl(0, 0%, 50%);
-  --react-color: hsl(207, 46%, 63%);
-  --mongo-db-color: hsl(120, 56%, 22%);
-  --express-color: hsl(0, 0%, 0%);
-  --node-color: hsl(123, 100%, 32%);
-  --sass-color: hsl(310, 57%, 59%);
-  --javascript-color: hsl(50, 100%, 33%);
-  --css-color: hsl(228, 78%, 52%);
-  --website-color: hsl(14, 100%, 63%);
-  --web-app-color: hsl(291, 19%, 52%);
+  --main-bg: #282a36;
+  --quizbox-bg: #1d3557;
+  --answerbox-bg: #44475a;
+  --questionbox-bg: #457b9d;
+  --question-bg: #1d3557;
+  --selection: #44475a;
+  --light-text: #f8f8f2;
+  --dark-text: #282a36;
+  --border: #44475a;
+  --dark-text: #282a36;
+  --answerbutton: hsla(104, 52%, 96%, 0.7);
+  --answerbutton-hover: #f1faee;
+  --answerbutton-green: hsla(83, 68%, 47%, 0.7);
+  --answerbutton-green-hover: #8ac926;
+  --answerbutton-red: hsla(0, 100%, 50%, 0.7);
+  --answerbutton-red-hover: #ff595e;
+  --h1-bg: #f1faee;
+  --h2-bg: #a8dadc;
+  --h3-bg: #ffb86c;
+  --cyan: #8be9fd;
+  --green: #8ac926;
+  --green-hover: #6ab04c;
+  --orange: #ffb86c;
+  --pink: #ff79c6;
+  --purple: #62596d;
+  --red: #ff595e;
+  --yellow: #f1fa8c;
 }

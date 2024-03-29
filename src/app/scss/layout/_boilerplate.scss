@@ -23,6 +23,20 @@ body {
   }
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  margin-top: u.rem(25);
+  gap: u.rem(30);
+  h2 {
+    margin-bottom: u.rem(20);
+  }
+}
+
 header ul,
 footer ul {
   margin: 0;

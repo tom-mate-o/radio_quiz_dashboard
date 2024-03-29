@@ -1,0 +1,32 @@
+@use '../util/' as u;
+
+.questionbox {
+  border-radius: u.rem(15);
+  background-color: var(--questionbox-bg);
+  padding: u.rem(10);
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include u.breakpoint-down('small') {
+    width: 90vw;
+  }
+
+  .question {
+    width: 100%;
+    padding: u.rem(15);
+    border-radius: u.rem(15);
+    background-color: var(--question-bg);
+  }
+
+  .questionmedia {
+    width: 100%;
+
+    audio {
+      width: 100%;
+      border-radius: u.rem(15);
+    }
+  }
+}

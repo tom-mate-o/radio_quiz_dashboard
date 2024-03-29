@@ -12,22 +12,32 @@ h1 {
   font-size: u.rem(25);
   font-size: clamp(u.rem(25), 1.45rem + 0.47vw, u.rem(30));
   line-height: 1;
-  color: red;
+  background-color: var(--h1-bg);
+  padding: u.rem(20);
+  border-radius: u.rem(15);
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: u.rem(20);
   font-size: clamp(u.rem(20), 1.14rem + 0.47vw, u.rem(30));
+  color: var(--light-text);
+  padding: u.rem(20);
+  border-radius: u.rem(15);
+  text-transform: uppercase;
 }
 
 h3 {
   font-size: u.rem(20);
   font-size: clamp(u.rem(20), 1.14rem + 0.47vw, u.rem(30));
+  background-color: var(--h3-bg);
+  padding: u.rem(20);
+  border-radius: u.rem(15);
 }
 
 p {
   margin: 0;
-
+  letter-spacing: u.rem(0.5);
   font-size: u.rem(14);
   font-size: clamp(u.rem(14), 0.84rem + 0.19vw, u.rem(16));
 }

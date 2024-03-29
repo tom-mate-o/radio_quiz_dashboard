@@ -1,0 +1,56 @@
+@use '../util/' as u;
+
+.answerbox {
+  border-radius: u.rem(15);
+  background-color: var(--answerbox-bg);
+  padding: u.rem(10);
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+
+  gap: u.rem(10);
+
+  &.hidden {
+    display: none;
+  }
+
+  @include u.breakpoint-down('small') {
+    width: 100%;
+  }
+}
+
+audio {
+  margin-top: u.rem(10);
+  border-radius: u.rem(15);
+
+  &.true {
+    padding: 0;
+  }
+
+  &.false {
+    padding: 0;
+  }
+}
+
+.answer {
+  padding: u.rem(15);
+  border-radius: u.rem(15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: u.rem(10);
+  width: 100%;
+  color: var(--dark-text);
+  font-weight: bold;
+
+  &.false {
+    background-color: var(--red);
+  }
+
+  &.true {
+    background-color: var(--green);
+    border: 1px solid var(--border);
+  }
+}
