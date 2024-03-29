@@ -1,0 +1,124 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg);
+  font-family: "Inria Serif", serif;
+  overflow-x: hidden;
+}
+body.no-scroll {
+  overflow: hidden;
+}
+
+header ul,
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+header ul li,
+footer ul li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.visually-hidden:focus {
+  left: 0;
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  padding: 0.5rem;
+  border: 1px solid;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.5625rem;
+  font-size: clamp(1.5625rem, 1.45rem + 0.47vw, 1.875rem);
+  line-height: 1;
+  color: red;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 1.14rem + 0.47vw, 1.875rem);
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 1.14rem + 0.47vw, 1.875rem);
+}
+
+p {
+  margin: 0;
+  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 0.84rem + 0.19vw, 1rem);
+}
+
+a,
+a:visited,
+a:active {
+  line-height: auto;
+  text-decoration: none;
+}
+
+:root {
+  --main-bg: hsl(47, 61%, 85%);
+  --dark-color-opacity: rgba(0, 0, 0, 0.65);
+  --text-color-light: hsl(47, 61%, 85%);
+  --text-color-dark: hsl(49, 11%, 29%);
+  --mobilemenu-bg: hsl(49, 11%, 29%);
+  --dark-bg: hsl(49, 11%, 29%);
+  --light-bg: hsl(0, 0%, 100%);
+  --content-text-color-light: hsl(0, 0%, 100%);
+  --content-text-color-dark: hsl(49, 11%, 29%);
+  --content-image-headline-color: hsl(0, 0%, 100%);
+  --primary-button-bg: hsl(49, 11%, 29%);
+  --primary-button-bg-hover: hsl(49, 11%, 19%);
+  --secondary-button-bg: transparent;
+  --secondary-button-bg-hover: hsl(47, 61%, 85%);
+  --secondary-button-border: hsl(0, 0%, 100%);
+  --secondary-button-border-hover: hsl(47, 61%, 85%);
+  --secondary-button-text-color: hsl(0, 0%, 100%);
+  --secondary-button-text-color-hover: hsl(49, 11%, 29%);
+  --dark-color-mobile-gallery-opacity: rgba(0, 0, 0, 0.4);
+  --all-color: hsl(0, 0%, 50%);
+  --react-color: hsl(207, 46%, 63%);
+  --mongo-db-color: hsl(120, 56%, 22%);
+  --express-color: hsl(0, 0%, 0%);
+  --node-color: hsl(123, 100%, 32%);
+  --sass-color: hsl(310, 57%, 59%);
+  --javascript-color: hsl(50, 100%, 33%);
+  --css-color: hsl(228, 78%, 52%);
+  --website-color: hsl(14, 100%, 63%);
+  --web-app-color: hsl(291, 19%, 52%);
+}/*# sourceMappingURL=style.css.map */
