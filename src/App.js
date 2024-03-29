@@ -44,7 +44,7 @@ function App() {
         </div>
       </div>
       <div className="mainContainer">
-        <h1>Radio Quiz Dashboard</h1>
+        <h1>Radio-Quiz-Dashboard</h1>
 
         {quizData.map((round, index) => (
           <div id={`round-${index + 1}`} key={index}>

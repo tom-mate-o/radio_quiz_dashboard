@@ -1,4 +1,3 @@
-import sound from './soundfiles/sound.mp3';
 import questionrevwerse1 from './soundfiles/music_reverse/question_reverse_radio_gaga.mp3';
 import answerrevwerse1 from './soundfiles/music_reverse/answer_reverse_radio_gaga.mp3';
 import questionrevwerse2 from './soundfiles/music_reverse/question_reverse_take_on_me.mp3';
