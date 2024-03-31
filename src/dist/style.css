@@ -243,6 +243,7 @@ audio.false {
 }
 .quizbox .moderation {
   margin-bottom: 0.9375rem;
+  max-width: 500px;
 }
 .quizbox .answerbutton {
   color: var(--dark-text);

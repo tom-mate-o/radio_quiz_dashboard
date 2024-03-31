@@ -48,7 +48,7 @@ function App() {
 
         {quizData.map((round, index) => (
           <div id={`round-${index + 1}`} key={index}>
-            <h2>Round {round.round}</h2>
+            <h2>Ronde {round.round}</h2>
             <div className="quizbox">
               <h3>{round.title}</h3>
               <p className="moderation">
@@ -57,7 +57,7 @@ function App() {
 
               {round.question.map((question, index) => (
                 <div key={index}>
-                  <h4>Question {index + 1}</h4>
+                  <h4>Vraag {index + 1}</h4>
                   <div className="questionbox">
                     <div className="question">
                       <p>
