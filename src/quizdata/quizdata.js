@@ -277,7 +277,7 @@ export const quizData = [
     question: [
       {
         question: [
-          { question: 'Noem 30 Beatles-nummers' },
+          { question: 'Noem 25 Beatles-nummers' },
           { media: beatthetoaster },
         ],
         answers: [
@@ -387,7 +387,7 @@ export const quizData = [
         answers: [
           { answer: 'Madonna', media: '', correct: false },
           { answer: 'Mariah Carey', media: '', correct: true },
-          { answer: 'Elton John', media: '', correct: true },
+          { answer: 'Elton John', media: '', correct: false },
         ],
       },
     ],
@@ -401,7 +401,7 @@ export const quizData = [
       {
         question: [
           {
-            question: '30 Simpsons Characters',
+            question: '25 Simpsons Characters',
           },
           { media: beatthetoaster },
         ],
